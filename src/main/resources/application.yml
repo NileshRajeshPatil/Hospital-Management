@@ -1,0 +1,27 @@
+spring:
+  security.oauth2.client:
+    provider:
+      twitter:
+        authorization-uri:
+        token-uri:
+        user-info-uri:
+        user-name-attribute:
+
+    registration:
+      google:
+        client-id:
+        client-secret:
+      github:
+        client-id:
+        client-secret:
+      twitter:
+        client-id:
+        client-secret:
+        redirect-uri:
+        authorization-grant-type:
+        scope:
+          - tweet.read
+          - users.read
+          - offline.access
+        client-name: Twitter
+        provider: twitter
